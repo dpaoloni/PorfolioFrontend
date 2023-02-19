@@ -1,0 +1,15 @@
+*{outline:1px solid olive;}
+
+.borderedondeado{ 
+    
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 48.1%;
+
+background-repeat:repeat;
+background-size : cover;
+
+background: url(portada4.jpg);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
