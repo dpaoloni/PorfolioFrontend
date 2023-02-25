@@ -26,3 +26,70 @@ text-align: center;
     font-style: italic; /*italica*/
     font-weight:bold; /*negrita*/
 }
+
+.caja {
+    height: 300px;
+    width:300px ;
+    margin:100px;
+    background-color: yellow;
+    box-shadow: 20px 30px 10px black /*eje x, eje ydesenfoque color*/
+}
+
+.caja2 {
+    height: 300px;
+    width:400px ;
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 15px;
+}
+.texto {
+    background-color: blueviolet;
+    column-count: 2;
+    column-gap: 60px;
+}
+.texto p{
+    margin: 0;
+}
+
+img{
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+
+}
+
+img:hover{
+    transform: scale(1.2);
+    filter: grayscale(0);
+}
+
+
+.img2{
+    display: inline-flex;
+    text-decoration-color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin: 10.px;
+    filter: grayscale(100%);
+    background-color: rgb(239, 9, 9);
+     height: 200px;
+    width: 300px;
+    animation: rectangulo 30s ease;
+}
+
+@keyframes rectangulo {
+
+    15% {
+        background-color: azure;
+        rotate: 90deg;
+    }
+
+    55% {
+        background-color: rgb(151, 160, 18);
+        rotate: 180deg;
+    }
+
+    75% {
+        background-color: rgb(30, 18, 160);
+        rotate: 360deg;
+    }
