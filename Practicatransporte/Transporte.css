@@ -72,6 +72,7 @@ h2{ color:  rgb(54, 146, 54);font-weight: 400;
     width: 75%;
     background-color: gainsboro;
     padding-left: 15px;
+    gap:30px;
 }
 
 .testimonios{
@@ -121,6 +122,85 @@ h2{ color:  rgb(54, 146, 54);font-weight: 400;
     border-radius: 50%;
     max-width: 70%;
     box-shadow: 0 0 5px black;
-    margin: 10px;
+    margin: 13px 16px;
     
+}
+
+.persona h5,
+.persona h6 {
+    color:  rgb(54, 146, 54);
+    font-weight: normal;
+    margin: 0;
+}
+
+.persona h5{
+    font-size: 16px;
+}
+
+.persona h6{
+    font-size: italic;
+}
+
+.persona p{
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.servicio{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 16px 0;
+    padding: 16px ;
+    display: flex ;
+    gap: 30px;
+}
+
+.servicio .info h4{
+    color:  rgb(54, 146, 54);
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 1px solid rgb(54, 146, 54) ;
+    padding-bottom: 8px;
+}
+
+.servicio img {
+    max-width: 225px;
+    border-radius: 15px;
+    display: block;
+}
+
+  /* hijos pares */
+.servicio:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.contacto{
+    display: flex;
+    gap: 30px;
+}
+.contacto section {
+width: 100%;
+}
+
+.datos p {
+    font-size: 14px;
+}
+.datos ul li{
+    font-size: 13px;
+}
+.formulario p{
+display: flex;;
+}
+
+.formulario p label{
+    min-width:100px ;
+    background-color: yellow;
+    
+}
+
+.formulario p input,
+.formulario p textarea{
+    background-color: orange;
+    width: 100%;
 }
