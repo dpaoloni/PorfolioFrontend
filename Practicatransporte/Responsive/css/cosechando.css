@@ -68,6 +68,10 @@ footer{
 h2{ color:  rgb(54, 146, 54);font-weight: 400;
 }
 
+.homeimg img{
+    max-width: 100%;
+}
+
 .bienvenidos{
     width: 75%;
     background-color: gainsboro;
@@ -230,4 +234,8 @@ margin-left: 100px;
 
 .formulario input[type="submit"]:hover{
     background-color: rgb(54, 146, 54) ;
+}
+
+@media  {
+    
 }
