@@ -1,0 +1,12 @@
+.contenedor{
+    background-color: bisque;
+    border-radius: 32px;
+    margin: 10px 10px;
+    padding: 20px;
+    border-color: #0a66c2;
+}
+
+.imgportada{
+    width: 100%;
+    border-radius: 32px 32px 0px 0px;
+}
