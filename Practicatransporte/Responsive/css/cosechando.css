@@ -68,7 +68,7 @@ footer{
 h2{ color:  rgb(54, 146, 54);font-weight: 400;
 }
 
-.homeimg img{
+.holder img{
     max-width: 100%;
 }
 
@@ -236,6 +236,41 @@ margin-left: 100px;
     background-color: rgb(54, 146, 54) ;
 }
 
-@media  {
+@media  screen and (max-width: 550px){
+    /*aca van a  ir todas las modificaciones*/
+    .columnas{  
+        flex-direction: column;
+    }
+    .bienvenidos,
+    .testimonio{
+        width: 100%;
+    }
+    .testimonios{
+        display: none;
+    }
+    main.holder {
+        padding-left: 15px;
+    padding-right: 16px;
+}
+    
+    .personas{
+        flex-wrap: wrap;
+    }
+
+ .persona{
+    width: 47%;
+    margin-bottom:20px ;
+}
+.servicio,
+.servicio:nth-child(even){
+    flex-direction: column;
+}
+.servicio img {
+    width: 100%;
+    max-width: 100%;
+}
+.contacto{
+    flex-direction: column;
+}
     
 }
