@@ -8,61 +8,111 @@
 	<title>INTIDIN</title>
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+		integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
 
 	<div class="contenedor">
 		<div>
-			<img class="imgportada" src="img/portada4.jpg" alt="impportada">
+			<img class="imgportada" src="img/Portada.png" alt="impportada">
 		</div>
 
-		<div class="imgperfil">
-			<img src="img/Denise1.jpg.jpeg" alt="fotoperfil">
-			<button <i class="fi fi-rr-pencil"></i> </button>
+		<div class="alinear_items">
+			<div class="imgperfil">
+				
+					<img src="img/Denise1.jpg.jpeg" alt="fotoperfil">
+				
+				<div class="editarfoto">
+					<a href=> <i class="fa-solid fa-pen"></i></a>
+				</div>
+
+			</div>
+
+
+			<div>
+				<div class="datos_personales">
+					<h1>Denise Paoloni</h1>
+					<h4>Contador Publico </h4>
+				</div>
+
+				<div class="datos_personales">
+					<span> Rosario, Santa Fe (Argentina)</span>
+					<span> <a href="#">Informacion de contacto </a></span>
+				</div>
+			</div>
+
+			<div class="añadir_elementos">
+				<button> Tengo Interés en</button>
+				<button> Añadir Sección</button>
+				<button> Más</button>
+			</div>
+
 		</div>
 
-		<div>
-			<h1>Denise Paoloni</h1>
-			<h5>Contador Publico </h5>
-		</div>
-
-		<div>
-			<span> Rosario, Santa Fe (Argentina)</span>
-			<span> <a href="#">Informacion de contacto </a></span>
-		</div>
-
-		<div class="LinkFomracion">
-			<ul>
-				<li>
-					<h2> <a href="#">
-							<img src="img/unr.jpg.crdownload" alt="UNR">
-							UNR</a></h2>
-				</li>
-				<li>
-					<h2><a href="#">
+		<!-- <div class="LinkFomracion">
+				<ul>
+					<li>
+						<a href="https://unr.edu.ar/">
+							<img src="img/unr.png" alt="UNR">
+							<span> Unr</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://sceu.frba.utn.edu.ar/e-learning/?gclid=Cj0KCQiA6fafBhC1ARIsAIJjL8l3CytESx-btBPvRy5U35LCtnH3j5TljvWIeSwiceb1cA-RbVT8MfEaApnREALw_wcB">
 							<img src="img/UTN.jpg" alt="UTN">
-							UTN</h2></a>
-				</li>
-			</ul>
-		</div>
+							<span> UTN</span>
+						</a>
+					</li>
+				</ul>
+			</div> -->
+		<!-- </div> -->
 
-		<div class="infoaccion">
-			<button> Tengo Interés en</button>
-			<button> Añadir Sección</button>
-			<button> Más</button>
-		</div>
+
 
 	</div>
 
 
 	<main>
+		<script>
+			function cambiar_parrafo() {
+				document.getElementById("edit-acercade").style.display = "block";
+				let texto = document.getElementById("text-acercade").innerText;
+				console.log(texto);
+			};
+			function fcambiarparrafo(valor) {
+				document.getElementById("text-acercade").innerText = valor;
+			};
+
+		</script>
+
+
 
 		<div class="contenedor">
-			<h2>Acerca de</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nesciunt voluptas velit voluptatum
-				excepturi ipsam rem amet ratione aperiam sequi consequuntur, quis architecto, enim iure at, dolorem a
-				iste. Vel.</p>
+			<div class="columnas">
+				<div class="acercade">
+					<h2>Acerca de</h2>
+
+					<div class="editarcontenido" onclick="cambiar_parrafo" ()> <a href=> <i
+								class="fa-solid fa-pen"></i></a>
+					</div>
+					<div>
+						<p id="text-acercade">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nesciunt
+							voluptas velit voluptatum
+							excepturi ipsam rem amet ratione aperiam sequi consequuntur, quis architecto, enim iure at,
+							dolorem
+							a
+							iste. Vel.</p>
+					</div>
+				</div>
+
+				<div>
+					<input id="edit-acercade" type="text" oninput="fcambiarparrafo(this.value)">
+				</div>
+			</div>
 		</div>
 
 		<div class="contenedor">
@@ -71,7 +121,7 @@
 			<h2>Educación</h2>
 		</div>
 
-		<div class="contenedor"> 
+		<div class="contenedor">
 			<h2>Aptitudes y Validaciones</h2>
 		</div>
 

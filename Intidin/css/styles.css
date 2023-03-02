@@ -1,4 +1,8 @@
-.contenedor{
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
     background-color: bisque;
     border-radius: 32px;
     margin: 10px 10px;
@@ -6,7 +10,106 @@
     border-color: #0a66c2;
 }
 
-.imgportada{
+.imgportada {
     width: 100%;
     border-radius: 32px 32px 0px 0px;
+}
+
+.imgperfil {
+    /* align-items: flex-start; */
+    display: flex;
+}
+
+.imgperfil img {
+    border-radius: 50%;
+
+    border: solid 3px black;
+    /* margin-top: -200px; */
+    position: relative;
+    bottom: 60px;
+    left: 20px;
+    width: 20%;
+    margin: 0px;
+    padding: 0;
+
+}
+
+.editarfoto {
+    /* margin: 0;
+    padding: 0; */
+    /* display: flex;
+    /* bottom: 60px;
+    left: 50px; */
+    position: flex;
+    bottom: 10px;
+    left: 10px;
+    width: 15%;
+    margin: 0px;
+    padding-left: 30px;
+}
+
+/* .fa-solid{
+    display: flex;
+}  */
+.alinear_items {
+    align-items: flex-start;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.datos_personales {
+    width: 75%;
+}
+
+.columnas {
+    display: inline-flex;
+    ;
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+
+.añadir_elementos button {
+    background-color: white;
+    margin: 10px;
+    margin-left: 0;
+    font-size: medium;
+    border-radius: 10px;
+    padding: 5px;
+    align-items: flex-start;
+}
+
+/* .LinkFomracion {
+    display: flex;
+    margin: 0;
+    padding: 0px;  
+}
+
+.LinkFomracion img{
+    scale: 30%;
+} 
+.LinkFomracion ul{
+    text-decoration: none ;
+    ;
+} 
+.LinkFomracion ul li a{
+    flex-grow: 1.5;
+    display: block;
+    text-align: center;
+    
+} 
+
+
+
+.LinkFomracion span{
+    text-decoration: none; */
+}
+
+#edit-acercade {
+    display: none;
+
+}
+
+.editarcontenido {
+    padding: 10px;
+    display: flex;
 }
