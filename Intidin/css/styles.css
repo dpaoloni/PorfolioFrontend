@@ -1,115 +1,118 @@
-body {
+/* body {
     font-family: 'Open Sans', sans-serif;
-}
+} */
 
 .contenedor {
-    background-color: bisque;
-    border-radius: 32px;
+   border-radius: 32px;
     margin: 10px 10px;
     padding: 20px;
+    border: solid 1px ;
     border-color: #0a66c2;
 }
 
-.imgportada {
-    width: 100%;
-    border-radius: 32px 32px 0px 0px;
+.contenedor#contenedorportada  {
+padding: 0;
 }
 
-.imgperfil {
-    /* align-items: flex-start; */
+div#perfil-portada{
     display: flex;
+    z-index: 1;
 }
 
-.imgperfil img {
+div#perfil-portada img{
+width: 100%;
+border-radius: 32px 32px 0  0;
+}
+
+#info{
+    padding: 16px;
+}
+
+.img-perfil{
     border-radius: 50%;
-
-    border: solid 3px black;
-    /* margin-top: -200px; */
-    position: relative;
-    bottom: 60px;
-    left: 20px;
-    width: 20%;
-    margin: 0px;
-    padding: 0;
-
+    width: 152px;
+    height: 152px;
+    margin-top: -90px;
+    z-index: 1;
 }
 
-.editarfoto {
-    /* margin: 0;
-    padding: 0; */
-    /* display: flex;
-    /* bottom: 60px;
-    left: 50px; */
-    position: flex;
-    bottom: 10px;
-    left: 10px;
-    width: 15%;
-    margin: 0px;
-    padding-left: 30px;
-}
-
-/* .fa-solid{
+.editarfoto div{
     display: flex;
-}  */
-.alinear_items {
-    align-items: flex-start;
-    padding-top: 0;
-    margin-top: 0;
+
 }
 
-.datos_personales {
-    width: 75%;
+ .editarfoto  a i {
+    margin-left: 150px;  
 }
 
-.columnas {
-    display: inline-flex;
-    ;
-    /* display: flex; */
-    /* flex-direction: row; */
+.info-contacto span{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.info-contacto span a{
+    color: #0a66c2;
+    touch-action: manipulation;
+    text-decoration: none;
+ }
+
+div#info-cia{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.25;
 }
 
-.añadir_elementos button {
-    /* background-color: white; */
-    margin: 10px;
-    margin-left: 0;
-    font-size: medium;
-    border-radius: 10px;
-    padding: 5px;
-    align-items: flex-start;
-}
 
-/* .LinkFomracion {
+div#info-data {
     display: flex;
-    margin: 0;
-    padding: 0px;  
-}
-
-.LinkFomracion img{
-    scale: 30%;
-} 
-.LinkFomracion ul{
-    text-decoration: none ;
-    ;
-} 
-.LinkFomracion ul li a{
-    flex-grow: 1.5;
-    display: block;
-    text-align: center;
+    justify-content: space-between;
     
-} 
+}/*achico la imagen de la lista*/
 
-
-
-.LinkFomracion span{
-    text-decoration: none; */
+div#info-data h1{
+    font-size: 1.8rem;
+    display: inline;
+    font-weight: 500;
+    line-height: 1.25;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
-#edit-acercade {
-    display: none;
-
+div#info-data ul#info-detalles {
+    width: 232px ;
+    list-style: none;/*saca los puntitos*/
+    flex-shrink: 0;
 }
 
-.editarcontenido {
-    padding: 10px;
+div#info-data ul#info-detalles li a {
+    color: black ;
     display: flex;
+    text-decoration: none;
 }
+
+div#info-data ul#info-detalles li a h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    align-self: center;
+    vertical-align: baseline;
+}
+
+div#info-data ul#info-detalles li a img {
+    width: 32px;
+    height: 32px;
+   margin-right:8px ;
+}
+
+div#info-accion{
+    display: flex;
+   margin-top: 6px;
+}
+div#info-accion button {
+ margin-right: 8px ;
+}
+
+/* .contenedor{
+
+}
+.contenedor-titulo {
+    
+} */
