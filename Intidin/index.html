@@ -57,7 +57,7 @@
 	</div>
 	<main>
 		<div class="contenedor">
-			<div class="contenedor-titulo">
+			<div class="contenedor-titulo-acercade">
 				<h2>Acerca de</h2>
 				<div class="btn-edit" onclick="cambiar_parrafo ()">
 					<!--  1el onclick llama  a la funcion cambiar cambiar_parrafo  -->
@@ -65,16 +65,16 @@
 						<i class="fa fa-pen"></i>
 					</a>
 				</div>
-			
+			</div>
 			<div>
 				<p id="text-acercade">Soy una persona colaborativa, con espirutu a la mejora continua</p>
 			</div>
+
+			<div>
+				<input id="edit-acercade" type="text" oninput="funcion2(this.value)" style="display: none">
+			</div>
 		</div>
-		<div>
-			<input id="edit-acercade" type="text" oninput="funcion2(this.value)" style="display: none">
 		</div>
-		</div>
-	</div>
 		<!-- <input type="file" id="archivo" onchange="showFile(this)" -->
 
 		<div class="contenedor">
@@ -96,20 +96,23 @@
 
 	</main>
 
-	//funcion que  cambia el estilo del imput a  visible 
-	//toma el valor del texto del parrafo  con id "text-acercade" lo muestra en consola
+	//funcion que cambia el estilo del imput a visible
+	//toma el valor del texto del parrafo con id "text-acercade" lo muestra en consola
 
+
+
+	<script src="objetos.js"></script>
 	<script>
-		
+
 		function cambiar_parrafo() {
-			document.getElementById("edit-acercade").style.display="block";
+			document.getElementById("edit-acercade").style.display = "block";
 			let texto = document.getElementById("text-acercade").innerText;
 			console.log(texto);
 		};
 		function funcion2(valor) {
 			document.getElementById("text-acercade").innerText = valor;
 		};
-	
+
 		function logMessage(message) {
 			console.log(message + "<br>");
 		};
@@ -117,12 +120,12 @@
 		let textarea = document.getElementById("edit-acercade");
 		textarea.addEventListener('keyup', (e) => {
 			logMessage(`Key "${e.Key}" relesed [event:keyup]`);
-			if (e.key == "Enter"){
-			document.getElementById("edit-acercade").style.display = "none";
-		}
-	});
+			if (e.key == "Enter") {
+				document.getElementById("edit-acercade").style.display = "none";
+			}
+		});
 	</script>
-<!-- //controla si se presiona un enter -->
+	<!-- //controla si se presiona un enter -->
 	<!-- //
 	<script> src = "ouput/app.js"</script> -->
 </body>

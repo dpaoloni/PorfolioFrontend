@@ -30,19 +30,22 @@ border-radius: 32px 32px 0  0;
 
 .img-perfil{
     border-radius: 50%;
-    width: 152px;
-    height: 152px;
+    width: 150px;
+    height: 150px;
     margin-top: -90px;
     z-index: 1;
 }
 
-.editarfoto div{
+.editarfoto {
     display: flex;
+    margin-top: -25px;  
+    margin-bottom: 20px;
 
 }
 
  .editarfoto  a i {
-    margin-left: 150px;  
+    margin-left: 150px;
+    
 }
 
 .info-contacto span{
@@ -74,11 +77,11 @@ div#info-data h1{
     font-weight: 500;
     line-height: 1.25;
     word-wrap: break-word;
-    word-break: break-all;
+    /* word-break: ; */
 }
 
 div#info-data ul#info-detalles {
-    width: 232px ;
+    width: 240px ;
     list-style: none;/*saca los puntitos*/
     flex-shrink: 0;
 }
@@ -90,9 +93,9 @@ div#info-data ul#info-detalles li a {
 }
 
 div#info-data ul#info-detalles li a h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    align-self: center;
+    align-self: center;;
     vertical-align: baseline;
 }
 
@@ -104,15 +107,19 @@ div#info-data ul#info-detalles li a img {
 
 div#info-accion{
     display: flex;
-   margin-top: 6px;
+   margin-top: 8px;
+   margin-bottom: 8px;
 }
 div#info-accion button {
  margin-right: 8px ;
 }
 
-/* .contenedor{
-
+.contenedor-titulo-acercade  {
+    display: flex ;
+   justify-content: space-between;
+   /* align-items: center;    */
 }
-.contenedor-titulo {
-    
-} */
+.btn-edit-conteiner {
+    margin-left: 16px;
+ 
+ }
